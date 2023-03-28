@@ -69,3 +69,5 @@ You should ensure that your submission compiles under gcc with optimization leve
 Do not use libraries outside of the C++ Standard Library.
 
 Feel free to add a README explaining your solution. If your solution includes additional cpp files include the appropriate compiler string in your README as well.
+
+Runjie Zhao's Solution: In this problem, we first need to access csv file and retrieve the data from it. Then, we use the latitude/longitude distance formula to calculate the distance between two points. Then, we consider each place as a vertex and there is an edge between two vertices if and only if the distance between those two edges is less than 320. In that case, we can consider the distance between two vertices as the weights. Then, we can use Dijkstra's algorithm to calculate the shortest path from the source node to our destination node. Since the weight of each edge is not an integer, we are unable to use Dial's algorithm which is more efficient.
